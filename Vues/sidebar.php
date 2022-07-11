@@ -33,7 +33,7 @@
 	                if (isset($donnees2[0])) {
 	                  echo $donnees2[0] .' '. $donnees2[1]; 
 	                }else{
-	                  echo "0".' '. $donnees2[1];
+	                  echo "0";
 	                }
                 ?>
           
