@@ -64,7 +64,7 @@
       <span class="icon-bar"></span>
   </a>
     <div class="navbar-inner">
-      <a class="brand" href="index.php" style="height: 30px;width: 20%;"><img src="themes/images/OK2.png" alt="texte alternatif" /></a>
+      <a class="brand" href="index.php" style="height: 30px;width: 20%;"><img src="themes/images/OK2.png" alt="Logo indisponible" /></a>
       
           <form class="form-inline navbar-search" method="get"  action="list_filter.php">
           <input id="srchFld" class="srchTxt search" type="text" name="filtre" placeholder="Rechercher ici..." style="padding-left: 25px;" />
