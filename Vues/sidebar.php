@@ -31,7 +31,7 @@
                 ?>
                 <?php 
 	                if (isset($donnees2[0])) {
-	                  echo number_format($donnees2[0] , 2, ',', ' ').' '.$donnees2[1].' TTC' ; 
+	                  echo number_format($donnees2[0] , 0, ',', ' ').' '.$donnees2[1].' TTC' ; 
 	                }else{
 	                  echo "0";
 	                }
