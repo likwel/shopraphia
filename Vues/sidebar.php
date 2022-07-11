@@ -21,7 +21,27 @@
             $reponse->closeCursor();
          
         ?>
-	 ]<span class="badge badge-warning pull-right">Ar 155.00</span></a></div>
+	 ]<span class="badge badge-warning pull-right">
+	
+		<?php
+             
+            $reponse2 = $pdo->query("SELECT sum(soustotal) as Somme , devise from ventes where origine ='Demande par Web' and etat='Brouillon'");
+             while ($donnees2 = $reponse2->fetch())
+                {
+                ?>
+                <?php 
+	                if (isset($donnees2[0])) {
+	                  echo $donnees2[0] .' '. $donnees2[1]; 
+	                }else{
+	                  echo "0".' '. $donnees2[1];
+	                }
+                ?>
+          
+                <?php
+                }
+            $reponse->closeCursor();
+         
+        ?> </span></a></div>
 
 	<div class="well well-small"><a id="myCart" href="#">Familles des articles</a></div>
 	<ul id="sideManu" class="nav nav-tabs nav-stacked">
