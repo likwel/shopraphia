@@ -1,0 +1,11 @@
+body{
+	background-color: transparent;
+}
+.container{
+	margin: 10px 10px 10px 10px;
+	background-color: red;
+}
+.en-tete ul li{
+	float: right;
+	margin-right: auto;
+}
