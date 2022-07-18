@@ -13,7 +13,7 @@
   $dsn = "mysql:host=$host;dbname=$dbname"; 
   // récupérer tous les utilisateurs
   $sql_all_product = "SELECT * FROM famille where mere ='Mère'";
-  $count_panier="SELECT sum(quantite) as Somme from ventes where origine ='Demande par Web' and etat='Brouillon'";
+  $count_panier="SELECT sum(quantite) as Somme from ventes where origine ='Demande par Web' and etat='Brouillon' and typ='DVS'";
   
   $nombre =9;
   try{
