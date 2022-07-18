@@ -82,7 +82,7 @@ endwhile; ?>
 
 <?php
 
-$reference="BC/". str_pad(1 , 5,"0",STR_PAD_LEFT);
+$reference="DVS/". str_pad(1 , 5,"0",STR_PAD_LEFT);
 
 $client="WEB_CLIENT";
 $adresse_client="Adresse WEB_CLIENT";
