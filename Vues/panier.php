@@ -25,7 +25,7 @@
   //$qtte=$_GET['quantité'];
   $sql_all_product = "SELECT *, listeprix.devise as Monay FROM `article` inner join listeprix on article.devise=listeprix.id_listeprix where id_article=".$id;
 
-  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon'";
+  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon' and typ='DVS'";
 
   $last_doc="SELECT reference FROM `ventes` where typ='BC' and etat !='Brouillon' ORDER BY `id_facture` DESC LIMIT 1";
 
@@ -86,7 +86,7 @@ $reference="BC/". str_pad(1 , 5,"0",STR_PAD_LEFT);
 
 $client="WEB_CLIENT";
 $adresse_client="Adresse WEB_CLIENT";
-$type="DV";
+$type="DVS";
 $paiement="Web Money";
 $origine="Demande par Web";
 $etat="Brouillon";
