@@ -22,7 +22,7 @@
   $dsn = "mysql:host=$host;dbname=$dbname"; 
   // récupérer tous les utilisateurs
   
-  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon'";
+  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon' and typ='DVS'";
 
   try{
    $pdo = new PDO($dsn, $username, $password);
