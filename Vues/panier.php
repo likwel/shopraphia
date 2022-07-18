@@ -25,7 +25,7 @@
   //$qtte=$_GET['quantité'];
   $sql_all_product = "SELECT *, listeprix.devise as Monay FROM `article` inner join listeprix on article.devise=listeprix.id_listeprix where id_article=".$id;
 
-  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon' and typ='DVS'";
+  $rqt_commande="SELECT * from ventes inner join article on ventes.article_id=article.id_article where etat ='Brouillon'";
 
   $last_doc="SELECT reference FROM `ventes` where typ='BC' and etat !='Brouillon' ORDER BY `id_facture` DESC LIMIT 1";
 
