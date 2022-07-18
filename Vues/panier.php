@@ -86,7 +86,7 @@ $reference="BC/". str_pad(1 , 5,"0",STR_PAD_LEFT);
 
 $client="WEB_CLIENT";
 $adresse_client="Adresse WEB_CLIENT";
-$type="BC";
+$type="DV";
 $paiement="Web Money";
 $origine="Demande par Web";
 $etat="Brouillon";
