@@ -4,7 +4,7 @@
 	<div class="well well-small"><a id="myCart" href="pannier.php"><img src="themes/images/ico-cart.png" alt="cart">Votre panier [ 
 		<?php
              
-            $reponse = $pdo->query("SELECT sum(quantite) as Somme from ventes where origine ='Demande par Web' and etat='Brouillon'");
+            $reponse = $pdo->query("SELECT sum(quantite) as Somme from ventes where origine ='Demande par Web' and etat='Brouillon' and typ='DVS'");
              while ($donnees = $reponse->fetch())
                 {
                 ?>
@@ -25,7 +25,7 @@
 	
 		<?php
              
-            $reponse2 = $pdo->query("SELECT sum(soustotal) as Somme , devise from ventes where origine ='Demande par Web' and etat='Brouillon'");
+            $reponse2 = $pdo->query("SELECT sum(soustotal) as Somme , devise from ventes where origine ='Demande par Web' and etat='Brouillon' and typ='DVS'");
              while ($donnees2 = $reponse2->fetch())
                 {
                 ?>
